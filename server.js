@@ -18,7 +18,7 @@ async function main() {
   const app = express();
 
   app.use(cors({ 
-    origin: process.env.FRONTEND_URL || true ,
+    origin: "https://goal-to-task-ai.vercel.app",
     credentials: true,
     allowedHeaders: ["Content-Type", "Authorization"]
   }));
