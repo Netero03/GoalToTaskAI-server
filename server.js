@@ -18,7 +18,7 @@ async function main() {
   const app = express();
 
   app.use(cors({ 
-    origin: "https://goal-to-task-ai.vercel.app",
+    origin: [process.env.FRONTEND_URL, "http://localhost:5173","http://localhost:3001"],
     credentials: true,
     allowedHeaders: ["Content-Type", "Authorization"]
   }));
